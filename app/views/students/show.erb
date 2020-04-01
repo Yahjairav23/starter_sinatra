@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1><%=@student.first_name%> Is Enrolled In:</h1>
+
+    <ul>
+        <%@student.courses.each do |course|%>
+           <li><%=course.title%> </li>
+        <%end%>
+    </ul>
+</body>
+</html>

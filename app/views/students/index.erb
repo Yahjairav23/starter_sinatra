@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+    <%@students.each do |student|%>
+        <li><a href="/students/<%=student.id%>">
+        <%=student.first_name%> <%=student.last_name%>
+        </a></li>
+    <%end%>
+    </ul>
+</body>
+</html>
